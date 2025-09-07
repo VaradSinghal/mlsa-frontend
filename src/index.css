@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* System76 Pop!_OS Design System */
+
+@layer base {
+  :root {
+    /* Core System76 colors */
+    --space-blue: 215 100% 10%;
+    --deep-space: 220 40% 8%;
+    --cosmic-orange: 25 100% 60%;
+    --planet-red: 15 80% 55%;
+    --asteroid-gray: 220 10% 85%;
+    --white: 0 0% 100%;
+    --light-gray: 220 15% 95%;
+    --medium-gray: 220 10% 70%;
+    --dark-gray: 220 15% 40%;
+    
+    /* Semantic tokens */
+    --background: var(--white);
+    --foreground: var(--deep-space);
+    --hero-bg: var(--space-blue);
+    --hero-text: var(--white);
+    --section-bg: var(--light-gray);
+    --section-text: var(--dark-gray);
+    
+    /* System colors */
+    --card: var(--white);
+    --card-foreground: var(--deep-space);
+    --popover: var(--white);
+    --popover-foreground: var(--deep-space);
+    --primary: var(--cosmic-orange);
+    --primary-foreground: var(--white);
+    --secondary: var(--space-blue);
+    --secondary-foreground: var(--white);
+    --muted: var(--light-gray);
+    --muted-foreground: var(--medium-gray);
+    --accent: var(--planet-red);
+    --accent-foreground: var(--white);
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: var(--white);
+    --border: var(--asteroid-gray);
+    --input: var(--asteroid-gray);
+    --ring: var(--cosmic-orange);
+    --radius: 0.5rem;
+    
+    /* Gradients */
+    --space-gradient: linear-gradient(135deg, hsl(var(--space-blue)), hsl(var(--deep-space)));
+    --cosmic-gradient: linear-gradient(135deg, hsl(var(--cosmic-orange)), hsl(var(--planet-red)));
+  }
+
+  .dark {
+    --background: var(--deep-space);
+    --foreground: var(--white);
+    --card: var(--space-blue);
+    --card-foreground: var(--white);
+    --popover: var(--space-blue);
+    --popover-foreground: var(--white);
+    --primary: var(--cosmic-orange);
+    --primary-foreground: var(--white);
+    --secondary: var(--space-blue);
+    --secondary-foreground: var(--white);
+    --muted: var(--dark-gray);
+    --muted-foreground: var(--medium-gray);
+    --accent: var(--planet-red);
+    --accent-foreground: var(--white);
+    --border: var(--dark-gray);
+    --input: var(--dark-gray);
+    --ring: var(--cosmic-orange);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
