@@ -68,7 +68,7 @@ export const Footer = () => {
         {/* Bottom footer */}
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="flex items-center space-x-6">
-            <span className="text-sm text-hero-text/60">© 2024 System76, Inc.</span>
+            <span className="text-sm text-hero-text/60">© 2025 System76, Inc.</span>
             <a href="#" className="text-sm text-hero-text/80 hover:text-hero-text transition-colors">Privacy Policy</a>
             <a href="#" className="text-sm text-hero-text/80 hover:text-hero-text transition-colors">Terms of Service</a>
           </div>

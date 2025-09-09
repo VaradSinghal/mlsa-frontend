@@ -16,7 +16,6 @@ export const Header = () => {
             <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
               log in
             </a>
-            <span className="text-muted-foreground">or</span>
             <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
               register
             </a>
